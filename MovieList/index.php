@@ -8,7 +8,11 @@ if ($action === NULL) {
         $action = 'home';
     }
 }
-
+//list of things needed in database
+//movie database:
+//Movie Title, Movie type, where to watch, when was made,
+//user database
+//idnum?, Name, email, password, admin{manual},
 
 
 switch ($action) {
