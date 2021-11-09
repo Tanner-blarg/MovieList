@@ -11,11 +11,11 @@
     <header>
     <h1>Register</h1>
     <nav>
-        <a href="index.php?action=home">Home</a>
-        <a href="index.php?action=master">MasterList</a>
-        <a href="index.php?action=watch">Watchlist</a>
-        <a href="index.php?action=wish">Wishlist</a>
-        <a href="index.php?action=hate">Hatelist</a>
+        <span id="button"><a href="index.php?action=home">Home</a></span>
+        <span id="button"><a href="index.php?action=master">MasterList</a></span>
+        <span id="button"><a href="index.php?action=watch">Watchlist</a></span>
+        <span id="button"><a href="index.php?action=wish">Wishlist</a></span>
+        <span id="button"><a href="index.php?action=hate">Hatelist</a></span>
     </nav>
     </header>
     <body>
