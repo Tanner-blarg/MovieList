@@ -35,4 +35,13 @@ switch ($action) {
     case 'wish':
         include 'View/wishlist.php';
         break;
+    case 'login':
+        include 'View/login.php';
+        break;
+    case 'register':
+        include 'View/register.php';
+        break;
+    case 'profile':
+        include 'profile.php';
+        break;
 }
