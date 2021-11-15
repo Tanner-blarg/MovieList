@@ -1,4 +1,8 @@
 <?php
+
+require_once 'Model/database.php';
+require_once 'Model/user.php';
+
 session_start();
 
 $action = filter_input(INPUT_POST, 'action');
