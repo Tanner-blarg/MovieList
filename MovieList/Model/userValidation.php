@@ -52,7 +52,7 @@ class userValidation {
             $error_message_email = 'Please enter an accurate email address.';
         }
         try{
-            $user = flightDB::getUserByEmail($email);
+            $user = moviesDB::getUserByEmail($email);
             $error_message = 'Error';
             $error_message_email = 'That email already exists.';       
         } catch (Exception $e){
