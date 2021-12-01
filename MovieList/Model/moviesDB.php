@@ -59,5 +59,32 @@ class moviesDB{
         return $tempHold;
     }
     
+    public static function getPassword($email) {
+        $db = Database::getDB();
+
+        $query = 'SELECT password from user
+                WHERE email = :email';
+        $statement = $db->prepare($query);
+        $statement->bindValue(":email", $email);
+        $statement->execute();
+        $row = $statement->fetch();
+        $statement->closeCursor();
+        
+        return $row['password'];
+    }
+    
+    public static function addMovie($movie_title, $movie_type, $where_to_watch, $when_was_made) {
+        $db = Database::getDB();
+
+        $query = 'INSERT INTO master (movie_title, movie_type, where_to_watch, when_was_made)
+              VALUES (:movie_title, :movie_type, :where_to_watch, :when_was_made)';
+        $statement = $db->prepare($query);        
+        $statement->bindValue(':movie_title', $movie_title);
+        $statement->bindValue(':movie_type', $movie_type);
+        $statement->bindValue(':where_to_watch', $where_to_watch);
+        $statement->bindValue(':when_was_made', $when_was_made);
+        $statement->execute();
+        $statement->closeCursor();
+    }
     
 }

@@ -20,6 +20,7 @@
     <body>
         <div id="wrapper">
             <p>this page contains the Main list of movies from here you can add a movie to the list or add a movie from this list to another.</p>
+            <span id="button"><a href="index.php?action=addMovie">Add Movie To Master</a></span><br>
             <table>                
                 <tr>             
                     <th>Movie Number</th>

@@ -11,15 +11,13 @@
     <header>
     <h1>Register</h1>
     <nav>
-        <span id="button"><a href="index.php?action=home">Home</a></span>
-        <span id="button"><a href="index.php?action=master">MasterList</a></span>
-        <span id="button"><a href="index.php?action=watch">Watchlist</a></span>
-        <span id="button"><a href="index.php?action=wish">Wishlist</a></span>
-        <span id="button"><a href="index.php?action=hate">Hatelist</a></span>
+        <span id="button"><a href="index.php?action=login">Login</a></span>
     </nav>
     </header>
     <body>
         <div id="wrapper">
+            <h2>Welcome</h2>
+            <h3>You must have an account to proceed:</h3>
             
             <form action="index.php" method="post">
                 <input type="hidden" name="action" value="registerConfirm">

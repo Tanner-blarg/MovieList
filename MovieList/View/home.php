@@ -11,14 +11,7 @@
         <span id="button"><a href="index.php?action=master">MasterList</a></span>
         <span id="button"><a href="index.php?action=watch">Watchlist</a></span>
         <span id="button"><a href="index.php?action=wish">Wishlist</a></span>
-        <span id="button"><a href="index.php?action=hate">Hatelist</a></span>
-        <span id="button"><a href="index.php?action=login">Login</a></span>
-        <span id="button"><a href="index.php?action=register">Register</a></span>
-         
-        <?php if ($_SESSION['email'] = ''){ ?>
-            <?php echo '?><span id="button"><a href="index.php?action=login">Login</a></span>';?>
-        <?php } ?>
-            
+        <span id="button"><a href="index.php?action=hate">Hatelist</a></span>      
     </nav>
     </header>
     <body>

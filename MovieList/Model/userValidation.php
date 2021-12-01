@@ -73,7 +73,7 @@ class userValidation {
             $error_message_email = 'Please enter an email';
         } else {
             try {
-            $success = flightDB::getUserByEmail($email);
+            $success = moviesDB::getUserByEmail($email);
             
         } catch (Exception $e) {
             $error_message_email = 'Invalid Email';
@@ -88,7 +88,7 @@ class userValidation {
         if ($password != '' && isset($success))
            {          
             try {
-                $db_password = flightDB::getPassword($email);
+                $db_password = moviesDB::getPassword($email);
             if (!password_verify($password, $db_password)) {
                 $error_message = 'Error';
                 $error_message_password = 'Invalid Password';
